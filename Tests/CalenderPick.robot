@@ -4,18 +4,14 @@ Library     SeleniumLibrary
 
 *** Variables ***
 ${browser}      Firefox
-${url}      https://www.amazon.in/
-
+${url}      https://www.tutorialspoint.com/selenium/practice/date-picker.php
 *** Test Cases ***
 Verify login success with valid credentials
         [Documentation]
         Open Browser        ${url}      ${browser}
         Maximize Browser Window
-#        right click
-        Open Context Menu    //a[normalize-space()='Mobiles']
-        Sleep    2s
-#        double click
-        Double Click Element    //a[normalize-space()="Today's Deals"]
-        Sleep    2s
+        Click Element    id=datetimepicker1
+        Sleep    5s
+        Click Element    xpath=//div[contains(@class,'flatpickr-calendar')]//span[@aria-label='June 9, 2025']
 
         Close Browser
