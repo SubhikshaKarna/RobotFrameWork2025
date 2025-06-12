@@ -1,0 +1,26 @@
+1749554527935	geckodriver	INFO	Listening on 127.0.0.1:59179
+1749554531008	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59180" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\skarn\\AppData\\Local\\Temp\\rust_mozprofile8W60fb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1749554531685	Marionette	INFO	Marionette enabled
+1749554532416	Marionette	INFO	Listening on port 59188
+WebDriver BiDi listening on ws://127.0.0.1:59180
+Read port: 59188
+1749554532537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.blogger.com/static/v1/widgets/2838643729-widgets.js, line 69: TypeError: a is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omayo.blogspot.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omayo.blogspot.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omayo.blogspot.com."
+JavaScript warning: https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp, line 277: Script terminated by timeout at:
+_.Fq.prototype.init@https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp:277:90
+_.Fq@https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp:274:2107
+Yq@https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp:281:415
+c@https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp:297:250
+b@https://www.blogger.com/_/scs/mss-static/_/js/k=boq-blogger.BloggerNavbarUi.en_US.RqiQJBu0uYY.es5.O/am=AAADWwAQ/d=1/excm=_b,_tp,navbarview/ed=1/dg=0/wt=2/ujg=1/rs=AEy-KP0YJjoz2TuOANjTFYVX6FiyC4_G-w/m=_b,_tp:279:475
+
+1749554578442	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://selenium143.blogspot.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://selenium143.blogspot.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://selenium143.blogspot.com/" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+Exiting due to channel error.

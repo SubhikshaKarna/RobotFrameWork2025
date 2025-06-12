@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.3 on win32)" generated="2025-06-11T09:17:32.897666" rpa="false" schemaversion="5">
+<suite id="s1" name="Task4" source="C:\Users\skarn\PycharmProjects\PythonProject\JuneRoboFwEGIndia2025\LabSession\Task4.robot">
+<test id="s1-t1" name="Verify login success with valid credentials" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:33.159864" level="INFO">Opening browser 'Firefox' to base url 'https://omayo.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-11T09:17:33.159516" elapsed="16.544499"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-11T09:17:49.704425" elapsed="0.001599"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:49.722650" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="4ed684f2-ab96-4876-9ff9-066c9730e7e5", element="a28f82d8-2562-4df1-93b4-d8b529dcc2ad")&gt;]</msg>
+<var>${elements}</var>
+<arg>xpath://select[@id='multiselect1']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:17:49.706206" elapsed="0.016522"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:49.723852" level="INFO">Selecting options from selection list 'xpath://select[@id='multiselect1']' by label Volvo.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Volvo</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:17:49.723574" elapsed="0.256156"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:17:51.980483" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:17:49.979936" elapsed="2.000710"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:51.981176" level="INFO">Un-selecting options from selection list 'xpath://select[@id='multiselect1']' by label Volvo.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Volvo</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:17:51.980878" elapsed="0.226967"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:17:54.208799" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:17:52.208141" elapsed="2.000830"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:54.209508" level="INFO">Selecting options from selection list 'xpath://select[@id='multiselect1']' by label Swift.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Swift</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:17:54.209210" elapsed="0.231664"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:17:56.442943" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:17:54.441138" elapsed="2.002001"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:56.443747" level="INFO">Un-selecting options from selection list 'xpath://select[@id='multiselect1']' by label Swift.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Swift</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:17:56.443409" elapsed="0.241515"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:17:58.691765" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:17:56.685212" elapsed="2.006881"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:17:58.692690" level="INFO">Selecting options from selection list 'xpath://select[@id='multiselect1']' by label Hyundai.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Hyundai</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:17:58.692364" elapsed="0.234427"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:00.927417" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:17:58.927029" elapsed="2.000562"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:00.928130" level="INFO">Un-selecting options from selection list 'xpath://select[@id='multiselect1']' by label Hyundai.</msg>
+<arg>xpath://select[@id='multiselect1']</arg>
+<arg>Hyundai</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:00.927834" elapsed="0.220887"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:03.149765" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:01.149068" elapsed="2.000829"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:03.150303" level="INFO">Selecting options from selection list '//select[@id='multiselect1']' by label Audi.</msg>
+<arg>//select[@id='multiselect1']</arg>
+<arg>Audi</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:03.150060" elapsed="0.225642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:05.376409" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:03.375935" elapsed="2.000640"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:05.377106" level="INFO">Un-selecting options from selection list '//select[@id='multiselect1']' by label Audi.</msg>
+<arg>//select[@id='multiselect1']</arg>
+<arg>Audi</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:05.376811" elapsed="0.222398"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:07.600092" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:05.599460" elapsed="2.000814"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ed684f2-ab96-4876-9ff9-066c9730e7e5", element="a28f82d8-2562-4df1-93b4-d8b529dcc2ad")&gt;</var>
+<status status="PASS" start="2025-06-11T09:17:49.723408" elapsed="17.876972"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2025-06-11T09:17:49.723027" elapsed="17.877434"/>
+</for>
+<kw name="Get Selected List Labels" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:07.623590" level="INFO">@{labels} = [ Older Newsletters ]</msg>
+<var>@{labels}</var>
+<arg>id:drop1</arg>
+<doc>Returns labels of selected options from selection list ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:07.600761" elapsed="0.022867"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>@{labels}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-11T09:18:07.624116" elapsed="0.001111"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:07.625851" level="INFO">Selecting options from selection list 'id:drop1' by label Older Newsletters.</msg>
+<arg>id:drop1</arg>
+<arg>Older Newsletters</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:07.625460" elapsed="0.017319"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:09.644129" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:07.643072" elapsed="2.001224"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:09.644974" level="INFO">Selecting options from selection list 'id:drop1' by label doc 1.</msg>
+<arg>id:drop1</arg>
+<arg>doc 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:09.644672" elapsed="0.224790"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:11.870708" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:09.869925" elapsed="2.000964"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:11.871575" level="INFO">Selecting options from selection list 'id:drop1' by label doc 2.</msg>
+<arg>id:drop1</arg>
+<arg>doc 2</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:11.871290" elapsed="0.234978"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:14.107084" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:12.106658" elapsed="2.000564"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:14.107639" level="INFO">Selecting options from selection list 'id:drop1' by label doc 3.</msg>
+<arg>id:drop1</arg>
+<arg>doc 3</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:14.107468" elapsed="0.219070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:16.328233" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:14.327126" elapsed="2.001270"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:16.329053" level="INFO">Selecting options from selection list 'id:drop1' by label doc 4.</msg>
+<arg>id:drop1</arg>
+<arg>doc 4</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-11T09:18:16.328773" elapsed="0.225937"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:18.555628" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:16.555124" elapsed="2.000626"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:18.556222" level="INFO">Clicking element 'xpath://a[@id='link1']'.</msg>
+<arg>xpath://a[@id='link1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:18.556026" elapsed="8.934388"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:29.491580" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:27.491087" elapsed="2.000672"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-06-11T09:18:29.492282" elapsed="1.745045"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:33.238547" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:31.237753" elapsed="2.000975"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:33.239704" level="INFO">Typing text 'Hi this is Riya' into text field 'xpath://textarea[@id='ta1']'.</msg>
+<arg>xpath://textarea[@id='ta1']</arg>
+<arg>Hi this is Riya</arg>
+<arg>timeout=5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:33.239431" elapsed="0.101934"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:37.342650" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:33.341947" elapsed="4.000863"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:37.343461" level="INFO">Clicking element 'xpath://button[@id='but2']'.</msg>
+<arg>xpath://button[@id='but2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:37.343194" elapsed="0.218491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:38.562607" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:37.562164" elapsed="1.000606"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://textarea[normalize-space()='The cat was playing in the garden.']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:38.563295" elapsed="0.015053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:39.579109" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:38.578818" elapsed="1.000447"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:39.580089" level="INFO">Typing text 'This is Riya' into text field 'css:div[id='HTML11'] textarea'.</msg>
+<arg>css:div[id='HTML11'] textarea</arg>
+<arg>This is Riya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:39.579654" elapsed="0.022906"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:41.603560" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:39.602837" elapsed="2.000908"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:43.604605" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:41.604178" elapsed="2.000548"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:43.605386" level="INFO">Clicking element 'xpath://div[@id='HTML27']//div[@class='widget-content']'.</msg>
+<arg>xpath://div[@id='HTML27']//div[@class='widget-content']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:43.605106" elapsed="0.216746"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:45.822932" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:43.822403" elapsed="2.000774"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-06-11T09:18:45.824017" elapsed="0.003708"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:47.828608" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:45.828265" elapsed="2.000512"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:47.830504" level="INFO">Clicking element 'xpath://button[@id='but2']'.</msg>
+<arg>xpath://button[@id='but2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:47.830224" elapsed="0.215177"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:50.046532" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:48.045841" elapsed="2.000854"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:52.047324" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:50.046939" elapsed="2.000550"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:52.048199" level="INFO">Clicking element 'xpath://button[normalize-space()='Submit']'.</msg>
+<arg>xpath://button[normalize-space()='Submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:52.047893" elapsed="0.217202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:54.265875" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:52.265490" elapsed="2.000549"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:54.266742" level="INFO">Clicking element 'xpath://button[normalize-space()='Login']'.</msg>
+<arg>xpath://button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:54.266445" elapsed="0.215701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:56.483394" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:54.482715" elapsed="2.000850"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:18:56.484253" level="INFO">Clicking element 'xpath://button[normalize-space()='Register']'.</msg>
+<arg>xpath://button[normalize-space()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:18:56.483957" elapsed="0.219816"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:18:58.705037" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:56.704458" elapsed="2.000741"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:00.706352" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:18:58.705590" elapsed="2.000927"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:00.707171" level="INFO">Typing text 'Riya' into text field 'xpath://form[@name='form1']//input[@type='text']'.</msg>
+<arg>xpath://form[@name='form1']//input[@type='text']</arg>
+<arg>Riya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:00.706893" elapsed="0.026176"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:02.733621" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:00.733371" elapsed="2.000410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:02.734463" level="INFO">Typing text '1234' into text field 'xpath://form[@name='form1']//input[@type='password']'.</msg>
+<arg>xpath://form[@name='form1']//input[@type='password']</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:02.734159" elapsed="0.018182"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:04.754220" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:02.752952" elapsed="2.001486"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:04.755433" level="INFO">Clicking element 'xpath://button[normalize-space()='LogIn']'.</msg>
+<arg>xpath://button[normalize-space()='LogIn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:04.754967" elapsed="0.229195"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:04.984988" level="INFO">Typing text 'Riya' into text field 'xpath://input[@name='q']'.</msg>
+<arg>xpath://input[@name='q']</arg>
+<arg>Riya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:04.984648" elapsed="0.019778"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:07.005580" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:05.005008" elapsed="2.000758"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:07.006683" level="INFO">Clicking element 'xpath://input[@value='Search']'.</msg>
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:07.006290" elapsed="4.373751"/>
+</kw>
+<kw name="Page Should Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:11.410414" level="INFO">Current page contains radio button 'xpath://input[@type='radio']'.</msg>
+<arg>xpath://input[@type='radio']</arg>
+<arg>timeout=5</arg>
+<doc>Verifies radio button ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-06-11T09:19:11.380329" elapsed="0.030164"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:13.411219" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:11.410718" elapsed="2.000637"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:13.412265" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-06-11T09:19:13.412005" elapsed="0.210854"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:15.623994" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:13.623581" elapsed="2.000574"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:15.624767" level="INFO">Selecting 'female' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-06-11T09:19:15.624531" elapsed="0.241505"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:15.867001" level="INFO">Clicking element 'id:alert1'.</msg>
+<arg>id:alert1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:15.866611" elapsed="0.059450"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:17.927578" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:15.926738" elapsed="2.001047"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:17.929218" level="INFO">HANDLE::&lt;class 'datetime.timedelta'&gt;::0:00:03</msg>
+<arg>action=ACCEPT</arg>
+<arg>timeout=3</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-06-11T09:19:17.928748" elapsed="0.017055"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-11T09:19:19.946456" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-11T09:19:17.946142" elapsed="2.000479"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:19.953068" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="4ed684f2-ab96-4876-9ff9-066c9730e7e5", element="c6aca9da-59d9-4ee5-a06f-8b15512ba6cf")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (s...</msg>
+<var>${elements}</var>
+<arg>xpath://input[@type='checkbox']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-06-11T09:19:19.947024" elapsed="0.006083"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-11T09:19:19.953646" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="4ed684f2-ab96-4876-9ff9-066c9730e7e5", element="c6aca9da-59d9-4ee5-a06f-8b15512ba6cf")&gt;'.</msg>
+<msg time="2025-06-11T09:19:20.500132" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-11T09:19:20.500481" level="FAIL">ElementClickInterceptedException: Message: Element &lt;input id="dte" type="checkbox"&gt; is not clickable at point (138,660) because another element &lt;html class="v2"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:297:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:180:31
+</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-11T09:19:19.953502" elapsed="0.555726">ElementClickInterceptedException: Message: Element &lt;input id="dte" type="checkbox"&gt; is not clickable at point (138,660) because another element &lt;html class="v2"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:297:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:180:31
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.509534" elapsed="0.000054"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ed684f2-ab96-4876-9ff9-066c9730e7e5", element="c6aca9da-59d9-4ee5-a06f-8b15512ba6cf")&gt;</var>
+<status status="FAIL" start="2025-06-11T09:19:19.953417" elapsed="0.556283">ElementClickInterceptedException: Message: Element &lt;input id="dte" type="checkbox"&gt; is not clickable at point (138,660) because another element &lt;html class="v2"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:297:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:180:31
+</status>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="FAIL" start="2025-06-11T09:19:19.953263" elapsed="0.556574">ElementClickInterceptedException: Message: Element &lt;input id="dte" type="checkbox"&gt; is not clickable at point (138,660) because another element &lt;html class="v2"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:297:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:180:31
+</status>
+</for>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@id='prompt']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.510204" elapsed="0.000046"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.510484" elapsed="0.000043"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>hello</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.510723" elapsed="0.000042"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.511038" elapsed="0.000041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.511544" elapsed="0.000074"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<arg>xpath://input[@id='uploadfile']</arg>
+<arg>${path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.511915" elapsed="0.000045"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.512149" elapsed="0.000039"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-06-11T09:19:20.512380" elapsed="0.000036"/>
+</kw>
+<status status="FAIL" start="2025-06-11T09:17:33.158038" elapsed="107.354668">ElementClickInterceptedException: Message: Element &lt;input id="dte" type="checkbox"&gt; is not clickable at point (138,660) because another element &lt;html class="v2"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:297:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:180:31
+</status>
+</test>
+<status status="FAIL" start="2025-06-11T09:17:32.899744" elapsed="107.616591"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task4" id="s1" pass="0" fail="1" skip="0">Task4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

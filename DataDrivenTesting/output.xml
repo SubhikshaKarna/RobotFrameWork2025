@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.3 on win32)" generated="2025-06-12T09:34:15.750348" rpa="false" schemaversion="5">
+<suite id="s1" name="TaskExcel" source="C:\Users\skarn\PycharmProjects\PythonProject\JuneRoboFwEGIndia2025\DataDrivenTesting\TaskExcel.robot">
+<kw name="Launch app" owner="TaskDTT" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:17.404129" level="INFO">Opening browser 'Edge' to base url 'https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-12T09:34:17.403882" elapsed="4.189948"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-12T09:34:21.594347" elapsed="0.033846"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:34:17.403260" elapsed="4.225241"/>
+</kw>
+<test id="s1-t1" name="Register with user Cat and cat@gmail.com" line="14">
+<kw name="InvalidLogin">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:23.633714" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:21.632816" elapsed="2.001120"/>
+</kw>
+<kw name="Set Name" owner="TaskDTT">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:23.635470" level="INFO">Typing text 'Cat' into text field 'xpath://input[@id='name']'.</msg>
+<arg>xpath://input[@id='name']</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:23.634860" elapsed="0.403607"/>
+</kw>
+<arg>${name}</arg>
+<status status="PASS" start="2025-06-12T09:34:23.634291" elapsed="0.404334"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:26.039283" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:24.038787" elapsed="2.000680"/>
+</kw>
+<kw name="Set Email" owner="TaskDTT">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:26.040569" level="INFO">Typing text 'cat@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
+<arg>xpath://input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:26.040273" elapsed="0.182925"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-06-12T09:34:26.039786" elapsed="0.183550"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:28.224452" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:26.223486" elapsed="2.001285"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:28.225789" level="INFO">Clicking element 'xpath://div[3]//div[1]//div[1]//div[2]//input[1]'.</msg>
+<arg>xpath://div[3]//div[1]//div[1]//div[2]//input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:28.225235" elapsed="0.175891"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:30.402301" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:28.401553" elapsed="2.001103"/>
+</kw>
+<kw name="Set Number" owner="TaskDTT">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:30.404795" level="INFO">Typing text '1234567890' into text field 'xpath://input[@id='mobile']'.</msg>
+<arg>xpath://input[@id='mobile']</arg>
+<arg>${number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:30.404228" elapsed="0.166693"/>
+</kw>
+<arg>${number}</arg>
+<status status="PASS" start="2025-06-12T09:34:30.403275" elapsed="0.167890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:32.572378" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:30.571635" elapsed="2.001093"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:32.573839" level="INFO">Typing text '2023-12-25' into text field 'id=dob'.</msg>
+<arg>id=dob</arg>
+<arg>2023-12-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:32.573229" elapsed="0.151608"/>
+</kw>
+<kw name="Set Subject" owner="TaskDTT">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:32.727362" level="INFO">Typing text 'QA' into text field 'xpath://input[@id='subjects']'.</msg>
+<arg>xpath://input[@id='subjects']</arg>
+<arg>${sub}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:32.726818" elapsed="0.183122"/>
+</kw>
+<arg>${sub}</arg>
+<status status="PASS" start="2025-06-12T09:34:32.725461" elapsed="0.184708"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:34.911202" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:32.910456" elapsed="2.001002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:34.914404" level="INFO">Clicking element 'xpath://div[7]//div[1]//div[1]//div[2]//input[1]'.</msg>
+<arg>xpath://div[7]//div[1]//div[1]//div[2]//input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:34.911811" elapsed="0.123429"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:35.036120" level="INFO">Sending C:\Users\skarn\Downloads\sampleFile.jpeg to browser.</msg>
+<arg>//input[@id='picture']</arg>
+<arg>${path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:35.035611" elapsed="0.054521"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:37.091795" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:35.090501" elapsed="2.001521"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://textarea[@id='picture']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-06-12T09:34:37.092357" elapsed="0.318322"/>
+</kw>
+<kw name="Set Address" owner="TaskDTT">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:37.412227" level="INFO">Typing text 'Mangalore' into text field 'xpath://textarea[@id='picture']'.</msg>
+<arg>xpath://textarea[@id='picture']</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:37.411902" elapsed="0.142767"/>
+</kw>
+<arg>${address}</arg>
+<status status="PASS" start="2025-06-12T09:34:37.411276" elapsed="0.143694"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:39.555975" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:37.555305" elapsed="2.001034"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:39.557540" level="INFO">Selecting options from selection list 'id:state' by index 2.</msg>
+<arg>id:state</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-06-12T09:34:39.556869" elapsed="0.175898"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:41.734318" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:39.733716" elapsed="2.000884"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:41.735555" level="INFO">Selecting options from selection list 'id:city' by index 1.</msg>
+<arg>id:city</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-06-12T09:34:41.735041" elapsed="0.149083"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-12T09:34:43.885186" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-12T09:34:41.884506" elapsed="2.001580"/>
+</kw>
+<kw name="Click Login" owner="TaskDTT">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-12T09:34:43.888394" level="INFO">Clicking element 'xpath://input[@value='Login']'.</msg>
+<arg>xpath://input[@value='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-12T09:34:43.887942" elapsed="0.243128"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:34:43.886800" elapsed="0.244517"/>
+</kw>
+<arg>name=Cat</arg>
+<arg>email=cat@gmail.com</arg>
+<arg>number=1234567890</arg>
+<arg>sub=QA</arg>
+<arg>address=Mangalore</arg>
+<status status="PASS" start="2025-06-12T09:34:21.631796" elapsed="22.499657"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:34:21.628846" elapsed="22.503275"/>
+</test>
+<kw name="Close app" owner="TaskDTT" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-12T09:34:44.134417" elapsed="2.586056"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:34:44.133888" elapsed="2.587003"/>
+</kw>
+<status status="PASS" start="2025-06-12T09:34:15.753437" elapsed="30.967598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TaskExcel" id="s1" pass="1" fail="0" skip="0">TaskExcel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
